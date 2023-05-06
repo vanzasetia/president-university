@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+}
+
+footer[aria-label="Attribution"] {
+  background-color: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #ddd;
+  color: #222;
+  font-size: calc(1rem + 0.5vw);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + * {
+  --flow-space: 0.5em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
